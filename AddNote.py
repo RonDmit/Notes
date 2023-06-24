@@ -10,7 +10,7 @@ def enter_note(file_base):
             if info.strip():
                 contact += info + "; "
                 break
-    current_data = datetime.datetime.now().strftime("%c")
+    current_data = datetime.datetime.now().strftime("%x")
     contact += current_data
     contact.strip()
     with open(file_base, 'a', encoding='utf-8') as f:
