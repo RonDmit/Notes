@@ -1,3 +1,5 @@
+import ReadShow
+
 def main_menu(file_base):
     play = True
     while play:
@@ -10,7 +12,7 @@ def main_menu(file_base):
                        "6. Выход\n")
         match answer:
             case "1":
-                print("Метод показа")
+                ReadShow.show_all(file_base)
             case "2":
                 print("Метод добавления")
             case "3":
