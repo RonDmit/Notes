@@ -1,5 +1,6 @@
 import ReadShow
-
+import AddNote
+import FindChangeRemove
 def main_menu(file_base):
     play = True
     while play:
@@ -14,13 +15,13 @@ def main_menu(file_base):
             case "1":
                 ReadShow.show_all(file_base)
             case "2":
-                print("Метод добавления")
+                AddNote.enter_note(file_base)
             case "3":
                 print("Метод удаления")
             case "4":
                 print("Метод изменения")
             case "5":
-                print("Метод нахождения")
+                FindChangeRemove.find_note(file_base, 1)
             case "6":
                 print("Вы вышли из записной книжки")
                 play = False
