@@ -12,5 +12,6 @@ def show_all(file_base):
     all_data = read_record(file_base)
     if all_data:
         print(*all_data, sep="\n")
+        print('-------------------------')
     else:
         print("Записная книжка пуста\n-------------------------")
