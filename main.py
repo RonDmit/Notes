@@ -15,17 +15,17 @@ def main_menu(file_base):
             case "1":
                 ReadShow.show_all(file_base)
             case "2":
-                AddNote.enter_note(file_base)
+                AddNote.write_note(file_base, 1)
             case "3":
-                print("Метод удаления")
+                FindChangeRemove.find_note(file_base, 2)
             case "4":
-                print("Метод изменения")
+                FindChangeRemove.find_note(file_base, 3)
             case "5":
                 FindChangeRemove.find_note(file_base, 1)
             case "6":
                 print("Вы вышли из записной книжки")
                 play = False
             case _:
-                print("Try again!\n")
+                print("Попробуй снова!\n")
 file_base = "base.csv"
 main_menu(file_base)
